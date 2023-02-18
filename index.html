@@ -7,37 +7,46 @@
        }
        #title {
           color: rgba(0,0,75,1);
-          font-size: 0.45in;
+          font-size: 0.40in;
           font-weight: 900;
+          display: inline-block;
+          padding-right: 15px;
        }
        #title-div {
           margin: auto;
-          width: 50%;
-          padding-top: 1.5in;
+          width: 90%;
+          padding-top: 0.5in;
        }
        #names {
           font-size: 0.17in;
           color: rgba(30,30,75,0.7);
+          display: inline-block;
+       }
+       #test-img {
+         width: 100%;
+         height: 50%;
        }
     </style>
     
     <div id="title-div">
-       <h4 id="names">By Henry Herrman, Udhayan Sundarapandian, Sehwan Minh Jang, and Sunetra Mukherjee</h4>
        <h1 id="title">AIR POLLUTION</h1>
+       <div style="border-left: 6px grey; height: 10px; display: inline-block;"></div>
+       <h4 id="names">Henry Herrman, Udhayan Sundarapandian, 
+         <br> Sehwan Minh Jang, and Sunetra Mukherjee</h4>
+       <h4 style="color: rgba(0,0,75,1); float: right;">Our Guiding Question</h4>
     </div>
+
+    <hr class="solid" style="margin-left: 50px; margin-right: 50px;">
  </head>
  
  <body>
     
    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js" crossorigin="anonymous"></script>
     
-   <model-viewer src="Assembly1.gltf" crossorigin="anonymous" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1">
+   <!--<model-viewer src="Assembly1.gltf" crossorigin="anonymous" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1">-->
    <!--WOAH BIG LINE; testing the 3d image thingy-->
     
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   <img src="what.png.png" id="test-img">
     
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
  </body>
