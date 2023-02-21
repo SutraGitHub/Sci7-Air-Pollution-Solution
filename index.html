@@ -2,10 +2,8 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
    <style>
-      #body {
-         fill: aliceblue;
-         width: 80%;
-         margin: auto;
+      body {
+         background-color: whitesmoke;
       }
       #title {
          color: rgba(0,0,75,1);
@@ -35,14 +33,22 @@
         height: 100%; 
         border: 1px solid gray;
       }
+      .clickable:hover {
+         opacity: 75%;
+         scale: 1.01;
+         transition-duration: 350ms;
+         filter: drop-shadow(0.75rem black);
+      }
    </style>
+
+   <title>Table 1 | Solution to Air Pollution</title>
    
    <div id="title-div">
       <h1 id="title">AIR POLLUTION</h1>
       <div class="vr"></div>
       <h4 id="names">Henry Herrman, Udhayan Sundarapandian, 
         <br> Sehwan Minh Jang, and Sunetra Mukherjee</h4>
-      <h4 style="color: rgba(0,0,75,1); float: right; padding-right: 20px;">Our Guiding Question</h4>
+      <a href="https://docs.google.com/document/d/1S1Y5EUGxLdJlOEdXku9QzDOaf3FAiXSRWl757DRnN5A/edit"><h4 style="color: rgba(0,0,75,1); float: right; padding-right: 20px;" class="clickable">Our Guiding Question & Solution</h4></a>
    </div>
 
    <hr style="border-top: 2px solid; margin-left: 75px; margin-right: 97px;">
@@ -53,18 +59,18 @@
      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
      <!--WOAH BIG LINE; testing the 3d image thingy-->
      
-     <a href="https://docs.google.com/document/d/18NFWbhXecTA5qkUfvmJXyrhnKKHzK_H9KK1ouDKFOp8/edit"><img src="NewsArticle.png" id="test-img"></a>
+     <a href="https://docs.google.com/document/d/18NFWbhXecTA5qkUfvmJXyrhnKKHzK_H9KK1ouDKFOp8/edit"><img src="NewsArticle.png" id="test-img" class="clickable"></a>
 
-     <model-viewer src="Assembly1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" style="display: inline-block; width: 48%; padding-top:10px; height: 400px;">
+     <model-viewer src="Assembly1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" style="display: inline-block; width: 48%; margin-top:10px; height: 400px;">
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
       </model-viewer>
       
-     <img src="Class.jpg" style="display: inline-block; width: 49.5%; padding-top:10px; border: 1px solid gray; vertical-align: top; height: 400px;">
+     <img class="clickable" src="Class.jpg" style="display: inline-block; width: 49.5%; margin-top:10px; border: 1px solid gray; vertical-align: top; height: 400px;">
 
-     <h4 style="display: inline-block;">Henry Herrman</h4>
-     <h4 style="display: inline-block; float: right; margin-right: 30px;">Sunetra Mukherjee</h4>
+     <h4 style="display: inline-block;">Henry Herrman | A 3D model of our solution</h4>
+     <h4 style="display: inline-block; float: right; margin-right: 30px;">Sunetra Mukherjee | A blueprint of our solution</h4>
      
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </div>
